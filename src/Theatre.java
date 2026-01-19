@@ -51,13 +51,13 @@ public class Theatre {
         System.out.println();
 
         System.out.println("Замените актёра в одном из спектаклей на актёра из другого спектакля и ещё раз выведите для него список актёров.");
-        firstShow.changeActor(firstActor, thirdActor);
+        firstShow.changeActor("McConaughey", thirdActor);
         System.out.println(firstShow);
         firstShow.printListOfActors();
         System.out.println();
 
         System.out.println("Попробуйте заменить в другом спектакле несуществующего актёра.");
-        secondShow.changeActor(new Actor("Alex", "Petrov", Gender.MALE, 175), firstActor);
+        secondShow.changeActor( "Petrov", firstActor);
         System.out.println();
 
         System.out.println("Для оперного и балетного спектакля выведите на экран текст либретто.");
